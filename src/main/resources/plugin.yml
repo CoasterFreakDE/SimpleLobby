@@ -1,0 +1,9 @@
+name: SimpleLobby
+main: de.coasterfreak.SimpleLobby
+version: 1.0.0
+description: "SimpleLobby is a plugin for Purpur/Paper/Spigot that allows you to create a lobby for your server."
+author: CoasterFreakDE
+website: https://coasterfreak.de
+api-version: 1.17
+softdepend:
+  - LuckPerms
