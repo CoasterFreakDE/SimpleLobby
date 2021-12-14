@@ -84,10 +84,10 @@ class ServerMenu(inventoryManager: InventoryManager) : InventoryProvider {
             val item = serverItems.getItemStack("${slotName}.item") ?: continue
             val serverName = serverItems.getString("${slotName}.server-name") ?: continue
 
-            val out = ByteStreams.newDataOutput()
-            out.writeUTF("PlayerCount")
-            out.writeUTF(serverName)
-            player.sendPluginMessage(SimpleLobby.instance, "BungeeCord", out.toByteArray())
+            val byteArrayDataOutput = ByteStreams.newDataOutput()
+            byteArrayDataOutput.writeUTF("PlayerCount")
+            byteArrayDataOutput.writeUTF(serverName)
+            player.sendPluginMessage(SimpleLobby.instance, "BungeeCord", byteArrayDataOutput.toByteArray())
 
             val maxPlayers = serverItems.getInt("${slotName}.max-players")
             val playerCount = playerCounts[serverName.lowercase()] ?: 0

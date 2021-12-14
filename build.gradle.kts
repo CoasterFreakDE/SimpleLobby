@@ -17,7 +17,6 @@ repositories {
 }
 
 dependencies {
-    //compileOnly("net.pl3x.purpur", "purpur-api", "1.18.1-R0.1-SNAPSHOT")
     compileOnly("io.papermc.paper:paper-api:1.18.1-R0.1-SNAPSHOT")
     compileOnly("org.bukkit:bukkit:1.18-R0.1-SNAPSHOT")
     compileOnly("net.luckperms:api:5.3")
